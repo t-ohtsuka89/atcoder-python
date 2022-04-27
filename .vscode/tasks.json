@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "oj t -c 'python ${file}' -d '${relativeFileDirname}/tests/'"
+    },
+    {
+      "label": "submit",
+      "type": "shell",
+      "command": "cd ${relativeFileDirname} && acc submit ${file}"
+    },
+  ]
+}
