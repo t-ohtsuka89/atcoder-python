@@ -42,6 +42,7 @@
 		"--env-file",
 		"${localWorkspaceFolder}/.env"
 	],
+	"postCreateCommand": "login.sh ${AC_USERNAME} ${AC_PASSWORD}",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
