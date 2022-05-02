@@ -4,7 +4,7 @@
     {
       "label": "test",
       "type": "shell",
-      "command": "oj t -c 'python ${file}' -d '${relativeFileDirname}/tests/'"
+      "command": "oj t -c 'python ${file}' -d '${relativeFileDirname}/test/'"
     },
     {
       "label": "submit",
