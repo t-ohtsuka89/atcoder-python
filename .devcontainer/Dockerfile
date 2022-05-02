@@ -23,6 +23,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 # copy `login atcoder script`
 COPY .devcontainer/login.sh /usr/local/bin/login.sh
+RUN chmod +x /usr/local/bin/login.sh
 
 # install requirements with pip.
 COPY requirements.txt /tmp/pip-tmp/
